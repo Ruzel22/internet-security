@@ -1,0 +1,362 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>InterSec</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="icon" type="image/png" href="img/favicon.png" />
+  <script src="https://www.google.com/jsapi"></script>
+  <script>
+    google.load("visualization", "1", { packages: ["corechart"] });
+    google.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        [{ label: "Название контента", type: "string" },
+         { label: "Доля в процентах", type: "number" }],
+        ['Поиск', 25],
+        ['Соцсети', 14],
+        ['Игры', 13],
+        ['Объявления', 9],
+        ['СМИ', 6],
+        ['Учеба', 6],
+        ['Торренты', 5],
+        ['Прочий контент', 4],
+        ['Софт', 4],
+        ['Интернет-магазины', 3],
+        ['Организации', 3],
+        ['Сервисы', 3],
+        ['Файлоомбенники', 2],
+        ['Азартные игры', 2],
+        ['Форумы', 1],
+      ]);
+      var options = {
+        title: "Процент угроз",
+        is3D: true,
+        backgroundColor: "transparent",
+        pieResidueSliceLabel: "Остальное",
+        legend: {textStyle: {color: "white"}},
+        colors: ['#ff7200', '#ff9000', '#ff9d1d', '#ffa837', '#ffb14c', '#ffb95e', '#ffb14b', '#ffbc65', '#ffc477', '#ffcb88', '#ffd7a3', '#ffdfb6', '#ffe9cd', '#fff0dc', '#ffffff',]
+      };
+      var chart = new google.visualization.PieChart(document.getElementById("data-diagram"));
+      chart.draw(data, options);
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="navigation-wrapper">
+      <nav class="main-navigation">
+          <p>Internet<span>security</span></p>
+      </nav>
+    </div>
+      <div class="banner">
+      <p class="banner-title">Безопасный <span>интернет</span></p>
+      <p class="banner-subtitle">Безопасный <span>интернет</span> для <span>безопасной жизни</span></p>
+      <a class="button1" href="#protect_yourself">Обезопасить себя</a>
+    </div>
+  </header>
+  <section class="block1">
+    <div class="ticker"><marquee behavior="scroll" direction="left" scrollamount="3"><span class="running-string">Участник "КРИТ-2020" Хабибуллин Рузель приветствует жюри конкурса.</span></marquee></div>
+     <div class="block1-wrapper">
+      <div class="text-block1">
+        <h1 class="block1-title">Предупреждён — значит <span>вооружён</span></h1>
+        <div class="line1"></div>
+        <p>Подавляющее большинство современных пользователей совершенно не заботится о своей безопасности в интернете.</p>
+        <p>Люди просто безудержно делятся личной информацией, доверяют сохранение паролей браузерам и ошибочно полагают, что интернет — это нечто белое и пушистое.</p>
+      </div>
+      <img class="internet_pic" src="img/png-internet-internet-icon-1600.png" alt="ligainternet.ru">
+    </div>
+  </section>
+  <section id="protect_yourself" class="main-rules-block">
+    <div class="main-rules-content">
+      <div class="list-container">
+       <div class="line"></div>
+       <h1>Основные правила <span class="orange bold">безопасности</span></h1>
+       <ul class="rules-list">
+        <li>
+          <a href="#personal_inf" class="rules-link rules-link--control">
+            <span class="rules-link__description">Контроль<br>за информацией</span>
+            <span class="rules-link__about">Подробнее</span>
+          </a>
+        </li>
+        <li>
+          <a class="rules-link rules-link--relable" href="#password">
+            <span class="rules-link__description">Надежный<br>пароль</span>
+            <span class="rules-link__about">Подробнее</span>
+          </a>
+        </li>
+          <li>
+          <a class="rules-link rules-link--safety" href="#mail">
+          <span class="rules-link__description">Безопасность<br>почты</span>
+          <span class="rules-link__about">Подробнее</span>
+          </a>
+          </li>
+          <li>
+          <a class="rules-link rules-link--protection" href="#browser">
+          <span class="rules-link__description">Защита<br>браузера</span>
+          <span class="rules-link__about">Подробнее</span>
+          </a>
+          </li>
+    </ul>
+     </div>
+    </div>
+  </section>
+  <section>
+    <div id="personal_inf" class="information-control-block">
+      <div class="rule1-block">
+        <p class="rule1-title">Контроль за личной <span>информацией</span></p>
+        <div class="points-container">
+          <ul class="rule1-points">
+            <li>
+              <h1 class="rule1-list-subtitle">Не сообщайте лишнего</h1>
+              <p class="rule1">
+                Не пишите в соцсетях домашний и рабочий адрес, не рассказывайте, в какое время бываете дома и когда уезжаете. Чем меньше о вас знают, тем лучше.
+              </p>
+            </li>
+            <li>
+              <h1 class="rule1-list-subtitle">Не хвастайтесь</h1>
+              <p class="rule1">Не пишите публичных постов с фотографиями новенького смартфона и ни в коем случае не рассказывайте о том, что у вас есть крупная сумма денег.</p>
+            </li>
+            <li>
+              <h1 class="rule1-list-subtitle">Не чекиньтесь</h1>
+              <p class="rule1">Рассказывать всему интернету о том, где и как часто вы бываете — опасное излишество. Отключите автоматическую геолокацию под постами и фотографиями, удалите Swarm. Даже друзьям не обязательно знать, каким путем вы регулярно ходите за покупками и ездите на работу.</p>
+            </li>
+            <li>
+              <h1 class="rule1-list-subtitle">Ограничьте доступ к своим профилям</h1>
+              <p class="rule1">Установите доступ «Для друзей». А если вам нужна публичная страница для работы, не публикуйте на ней ничего личного.</p>
+            </li>
+          </ul>
+          <iframe class="-video" width="468" height="260" src="https://www.youtube.com/embed/qBDbO_bAdFM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div id="password" class="reliable-password-block">
+       <div class="pass-block-conrainer">
+         <h1 class="pass-block-title">Надежный <span class="orange-password">Пароль</span></h1>
+         <div class="password-block-content">
+          <ul class="relpass-points">
+            <li>
+              <h2 class="pass-points-title">Минимум 12 символов</h2>
+              <p class="pass-block-text">Вам нужно выбрать длинный пароль. Не существует минимальной длины пароля, которая всех бы устраивала, однако обычно используют длину от 12 до 14 символов. Более длинный пароль будет ещё лучше.</p>
+            </li>
+            <li>
+              <h2 class="pass-points-title">Цифры, символы и буквы</h2>
+              <p class="pass-block-text">Используйте различные комбинации символов, чтобы сделать пароль более сложным.</p>
+            </li>
+            <li>
+              <h2 class="pass-points-title">Не словарное слово</h2>
+              <p class="pass-block-text">Избегайте очевидных словарных слов или их комбинаций. Любое слово в пароле само по себе плохо. Любая комбинация слов тоже плоха.</p>
+            </li>
+            <li>
+              <h2 class="pass-points-title"></h2>
+              <p class="pass-block-text"></p>
+            </li>
+          </ul>
+          <div class="password-video__wrapper">
+            <iframe width="468" height="260" src="https://www.youtube.com/embed/u1ffz7qDp78" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      <ul class="pass-cards">
+          <li><h2 class="password-manager-title"><span class="orange-pass">ЕKkjdf3en!@#e3els?</span> И как же такой <span class="orange-pass">пароль</span> запомнить?</h2>
+          <div class="line"></div>
+          <p class="password-manager">Никак. Не надо его запоминать. Есть такие сервисы — менеджеры паролей. Они сами генерируют надежные пароли и их хранят. Таких сервисов довольно много — одни работают в онлайне и в приложениях, другие устанавливаются в память компьютера. </p></li>
+          <li><h2 class="password-manager-title">Для такого <span class="orange-pass">менеджера</span> тоже нужен <span class="orange-pass">пароль?</span></h2>
+          <div class="line"></div>
+          <p class="password-manager">Да. Это называется «мастер-пароль». И вот его придется запомнить.</p></li>
+          <li><h2 class="password-manager-title">Как <span class="orange-pass">придумать</span> надежный мастер-пароль и <span class="orange-pass">запомнить</span> его?</h2>
+          <div class="line"></div>
+          <p class="password-manager">Можно вспомнить какую-то фразу из семейного фольклора и записать ее латиницей. Кстати, некоторые сервисы советуют в качестве хорошего пароля использовать русские слова, записанные на английской раскладке и наоборот.</p></li>
+      </ul>
+      <a href="" id="open-button" class="open-button">Сгенерировать пароль</a>
+    </div>
+    
+   </div>
+  </section>
+  <section class="mail-safety">
+      <div id="mail" class="ms-content">
+          <h1 class="mail-safety-title"><span>Безопасность</span> электронной почты</h1>
+          <div class="line"></div>
+           <ul class="mail-safety-list">
+            <li>
+              <h2>Взлом ваших<br>сервисов</h2>
+              <div class="line2"></div>
+              <p class="m-s-text">Взломанный почтовый ящик — это доступ к сайтам от вашего имени. Если ваш почтовый ящик будет взломан, злоумышленник в считанные секунды изменит пароль ко всем вашим сервисам, где данный адрес использовался для регистрации.</p>
+            </li>
+            <div class="line-between"></div>
+            <li>
+              <h2>Двухэтапная аутентификация</h2>
+              <div class="line2"></div>
+              <p>Любой почтовый ящик, расположенный в зоне RU (rambler.ru, mail.ru, yandex.ru) недостаточно надежен! Как вариант, воспользуйтесь электронной почтой от Google.com (Gmail) с настройкой двухэтапной аутентификации.</p>
+            </li>
+            <div class="line-between"></div>
+            <li>
+              <h2>Несколько адресов<br>почты</h2>
+              <div class="line2"></div>
+              <p>Используйте несколько адресов для рабочей и личной переписки, для регистрации на сайтах и подписок на рассылки интересующих вас материалов. Это правильно с точки зрения цифровой безопасности и станет первичным фильтром писем, который позволит при работе сосредоточиться именно на нужной корреспонденции.</p>
+            </li>
+          </ul>
+      <h2 class="fishing-title">Фишинг</h2>
+      <div class="line2"></div>
+      <ul class="fishing-attack-content">
+          <h3 class="fishing-attack-title">Что такое фишинг?</h3>
+          <p class="fishing-attack-text">Фишинг-атаки можно назвать преступлением XXI века. Средства массовой информации ежедневно публикуют списки организаций, чьи клиенты подверглись фишинговым атакам. Средства phishing-мошенничества с каждым днем продолжают расти не только количественно, но и качественно. В то время, как спам только отвлекает получателей от работы, фишинг зачастую ведет к реальным финансовым потерям. Угроза вполне серьезная, так почему же люди до сих пор не научились ее избегать?</p>
+          <h3 class="fishing-attack-title">Как уберечься от фишинга?</h3>
+          <p class="fishing-attack-text">В первую очередь следует сохранять спокойствие и не поддаваться на провокации — это одинаково полезно и в случае онлайн-мошенничества, и в случае «фишинга». Необходимо как следует проверять все ссылки и сайты, на которые они ведут.
+          Если вы получили подозрительную ссылку от коллеги или друга, прежде чем по ней перейти, стоит убедиться, что на другом конце провода именно тот, кто должен там быть. В случае «фишинга» также полезно помнить о том, что данные, например, банковской карты ни один настоящий сотрудник банка просто не вправе у вас потребовать.</p>
+      </ul>
+      </div>
+  </section>
+  <section id="browser" class="browser-safety">
+    <div class="BS-content-block">
+      <h1 class="BS-title">Защита <span class="orange-browser">браузера</span></h1>
+      <h3 class="browser-settings-title">Настройте браузер</h3>
+      <p class="browser-settings">Вы можете запретить доступ к нежелательным элементам, таким как камера или микрофон, запретить отслеживание геолокации. Это не панацея, но так вы по крайней мере убедитесь, что браузер не настроен против вас.</p>
+      <h3 class="browser-settings-title">Регулярно обновляйте браузер</h3>
+      <p class="browser-settings">Не успели разработчики залатать очередную дыру в безопасности браузера, как появляется новая, поэтому так важно, чтобы была установлена свежая версия.</p>
+      <p class="browser-settings">Во многих современных браузерах есть служба автоматического обновления. Если вы отключили её по какой-то причине, не забывайте регулярно проверять наличие обновлений вручную.</p>
+      <h3 class="browser-settings-title">Будьте внимательны при установке расширений</h3>
+      <p class="browser-settings">Большинство расширений безвредны, а многие вообще незаменимы в работе. Но не теряйте бдительности, особенно когда дело касается доступа к вашим данным. Например, получив доступ к вашим данным на всех веб-сайтах, расширение может блокировать рекламу или, наоборот, добавлять лишние баннеры.</p>
+      <div class="diagram-title">
+       C каких сайтов пользователи переходят<br>на страницы с угрозами
+      </div>
+      <div class="line2"></div>
+      <div id="data-diagram" class="data-diagram" style="width: 1000px; height: 700px;"></div>
+      <div class="type-of-attack">
+        <div class="list-attack">
+          <h3 class="title-for-list">Вид атаки</h3> 
+          <ul class="choose-type">
+            <li class="attack">
+              <a href="#" id="homograph-button" class="attack-link choosed-type-of-attack">
+                IDN homograph attack
+              </a>
+            </li>
+            <li class="attack">
+              <a href="#" id="drive-button" class="attack-link">
+                Drive-by download
+              </a>
+            </li>
+          </ul>
+        </div>     
+        <div class="types-of-attack-container">
+          <div id="idn-container" class="IDN-container">
+            <h2 class="IDN-title">
+            <span class="idn-orange">IDN</span> homograph <span class="attack-border">attack</span>
+            </h2>
+            <h3 class="IDN-title-rus">
+            <span class="bold-rustitle">Атака</span> интернационализированного <span class="bold-rustitle">доменного имени</span>
+            </h3>
+            <p class="IDN">
+              Атаки с помощью омографов — букв, похожих на символы других алфавитов — часто проводят "фишеры", маскирующие названия поддельных сайтов под страницы известных компаний и брендов. Так, в сентябре эксперты обнаружили мошеннический домен, замаскированный под страницу корпорации Adobe, в которой вместо латинской буквы "А" была кириллическая. Сайт распространял бэкдор Beta Bot под видом новой версии Flash Player.
+            </p>
+            <h3 class="howtoavoid-IDN-title">Как это избежать?</h3>
+            <div class="line2"></div>
+            <p class="howtoavoid-IDN">
+              Чтобы понять, безопасно ли открывать тот или иной сайт, проверьте информацию в адресной строке. Если с сайтом нельзя установить защищенное соединение, вы увидите предупреждение.
+            </p>
+            <ul class="secure-connection-pic">
+              <li class="conection-pic-container">
+                <img class="conection-pic" src="img/safety-conection.jpg" alt="">
+                <p class="conection-text">Соединение <span>защищено</span></p>
+              </li>
+              <li class="conection-pic-container">
+                <img class="conection-pic" src="img/not-safety-conection.jpg" alt="">
+                <p class="conection-text">Соединение <span>не защищено</span></p>
+              </li>
+            </ul>
+          </div>
+          <div id="drive-container" class="Drive-By-Download-container">
+            <h2 class="DBD-title"><span class="idn-orange">Drive</span>-By <span class="attack-border">Download</span></h2>
+            <p class="DBD-text">Drive-by download – атака, при которой загрузка происходит тайно при открытии жертвой веб-сайта. Однако подобный сайт довольно быстро будет замечен, особенно если он массово начнет загружать пользователям вредоносные файлы. Потому злоумышленники часто применяют вариацию данной атаки, называемую drive-by login. Это все та же тайная загрузка, но происходящая после авторизации на сайте. Такая схема позволяет злоумышленникам долгое время скрываться от обнаружения специалистами в сфере безопасности и попадания в списки вредоносных сайтов.
+            </p>
+            <ul class="DBD-list">
+              <li>
+                <p class="DBD-number">1</p>
+                <p class="DBD-paragraph">Порядок в папке «Загрузки». Если у вас там файлы беспорядочно хранятся месяцами, наведите порядок, удалив все ненужное. Вы должны четко знать, какие файлы и зачем хранятся у вас в папке «Загрузки».</p>
+              </li>
+              <li>
+                <p class="DBD-number">2</p>              
+                <p class="DBD-paragraph">Не доверять файлам из папки с загрузками больше, чем только что скачанным из сети. Открывать их следует только в безопасной среде или виртуальной операционной системе, а если файл не является секретным документом и вы не боитесь им поделиться, обязательно проверяйте на сайте VirusTotal.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="modals">
+    <div class="modal-overlay" id="modal-overlay"></div>
+    <div class="modal" id="modal">
+      <div class="modal-guts">
+        <a id="close-button" href="" class="close-button"><img class="exit-logo" src="img/exit-logo.png" alt=""></a>
+        <p class="your-password">Ваш пароль:</p>
+        <input class="input-password">
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav class="main-navigation">
+      <p>Internet<span>security</span></p>
+  </nav>
+</footer>
+</body>
+<script>
+  function generate( length = 12 ){
+    var uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    var lowercase = 'abcdefghijklmnopqrstuvwxyz';
+    var numbers = '0123456789';
+    var symbols = '!"#$%&\'()*+,-./:;<=>?@^[\\]^_`{|}~';
+
+    var all = uppercase + lowercase + numbers + symbols;
+
+    var password = '';
+
+    for (var index = 0; index < length; index++) {
+        var character = Math.floor(Math.random() * all.length);
+        password += all.substring(character, character + 1);
+    }
+
+    return password;
+  }
+
+  var homographButton = document.getElementById("homograph-button");
+  var driveButton = document.getElementById("drive-button");
+  var idnContainer = document.getElementById("idn-container");
+  var driveContainer = document.getElementById("drive-container");
+  homographButton.addEventListener("click", function(ev) {
+    ev.preventDefault();
+    ev.currentTarget.classList.add("choosed-type-of-attack");
+    driveButton.classList.remove("choosed-type-of-attack");
+    idnContainer.style.display = "block";
+    driveContainer.style.display = "none";
+  })
+  driveButton.addEventListener("click", function(ev) {
+    ev.preventDefault();
+
+    ev.currentTarget.classList.add("choosed-type-of-attack");
+    homographButton.classList.remove("choosed-type-of-attack");
+    idnContainer.style.display = "none";
+    driveContainer.style.display = "block";
+  })
+  var modals = document.querySelector(".modals");
+  var closeButton = document.querySelector("#close-button");
+  var openButton = document.querySelector("#open-button");
+  var input = document.querySelector(".input-password");
+
+  closeButton.addEventListener("click", function(ev) {
+    ev.preventDefault();
+    modals.style.display = "none";
+  });
+
+  openButton.addEventListener("click", function(ev) {
+    ev.preventDefault();
+    modals.style.display="block";
+    input.value = generate();
+    
+  });
+</script>
+</html>
