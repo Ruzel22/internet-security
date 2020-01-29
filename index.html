@@ -6,7 +6,11 @@
   <title>InterSec</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap&subset=cyrillic" rel="stylesheet">
-  <link rel="icon" type="image/png" href="img/favicon.png" />
+  <link rel="stylesheet" href="animate.css" />
+  <script src="wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
   <script src="https://www.google.com/jsapi"></script>
   <script>
     google.load("visualization", "1", { packages: ["corechart"] });
@@ -53,29 +57,29 @@
       </nav>
     </div>
       <div class="banner">
-      <p class="banner-title">Безопасный <span>интернет</span></p>
-      <p class="banner-subtitle">Безопасный <span>интернет</span> для <span>безопасной жизни</span></p>
-      <a class="button1" href="#protect_yourself">Обезопасить себя</a>
+      <p class="banner-title wow fadeIn">Безопасный <span>интернет</span></p>
+      <p class="banner-subtitle wow fadeInUp">Безопасный <span>интернет</span> для <span>безопасной жизни</span></p>
+      <a class="button1 wow fadeInUp" href="#protect_yourself">Обезопасить себя</a>
     </div>
   </header>
   <section class="block1">
     <div class="ticker"><marquee behavior="scroll" direction="left" scrollamount="3"><span class="running-string">Участник "КРИТ-2020" Хабибуллин Рузель приветствует жюри конкурса.</span></marquee></div>
      <div class="block1-wrapper">
       <div class="text-block1">
-        <h1 class="block1-title">Предупреждён — значит <span>вооружён</span></h1>
+        <h1 class="block1-title wow fadeInLeft">Предупреждён — значит <span>вооружён</span></h1>
         <div class="line1"></div>
         <p>Подавляющее большинство современных пользователей совершенно не заботится о своей безопасности в интернете.</p>
         <p>Люди просто безудержно делятся личной информацией, доверяют сохранение паролей браузерам и ошибочно полагают, что интернет — это нечто белое и пушистое.</p>
       </div>
-      <img class="internet_pic" src="img/png-internet-internet-icon-1600.png" alt="ligainternet.ru">
+      <img class="internet_pic wow fadeInRight" src="img/png-internet-internet-icon-1600.png" alt="ligainternet.ru">
     </div>
   </section>
   <section id="protect_yourself" class="main-rules-block">
     <div class="main-rules-content">
       <div class="list-container">
-       <div class="line"></div>
-       <h1>Основные правила <span class="orange bold">безопасности</span></h1>
-       <ul class="rules-list">
+       <div class="line wow fadeInLeft"></div>
+       <h1 class="wow fadeInLeft">Основные правила <span class="orange bold">безопасности</span></h1>
+       <ul class="rules-list wow slideInLeft">
         <li>
           <a href="#personal_inf" class="rules-link rules-link--control">
             <span class="rules-link__description">Контроль<br>за информацией</span>
@@ -107,29 +111,29 @@
   <section>
     <div id="personal_inf" class="information-control-block">
       <div class="rule1-block">
-        <p class="rule1-title">Контроль за личной <span>информацией</span></p>
+        <p class="rule1-title wow slideInDown">Контроль за личной <span>информацией</span></p>
         <div class="points-container">
           <ul class="rule1-points">
             <li>
-              <h1 class="rule1-list-subtitle">Не сообщайте лишнего</h1>
-              <p class="rule1">
+              <h1 class="rule1-list-subtitle wow slideInDown">Не сообщайте лишнего</h1>
+              <p class="rule1 wow fadeInLeft">
                 Не пишите в соцсетях домашний и рабочий адрес, не рассказывайте, в какое время бываете дома и когда уезжаете. Чем меньше о вас знают, тем лучше.
               </p>
             </li>
             <li>
-              <h1 class="rule1-list-subtitle">Не хвастайтесь</h1>
-              <p class="rule1">Не пишите публичных постов с фотографиями новенького смартфона и ни в коем случае не рассказывайте о том, что у вас есть крупная сумма денег.</p>
+              <h1 class="rule1-list-subtitle wow slideInDown">Не хвастайтесь</h1>
+              <p class="rule1 wow fadeInLeft">Не пишите публичных постов с фотографиями новенького смартфона и ни в коем случае не рассказывайте о том, что у вас есть крупная сумма денег.</p>
             </li>
             <li>
-              <h1 class="rule1-list-subtitle">Не чекиньтесь</h1>
-              <p class="rule1">Рассказывать всему интернету о том, где и как часто вы бываете — опасное излишество. Отключите автоматическую геолокацию под постами и фотографиями, удалите Swarm. Даже друзьям не обязательно знать, каким путем вы регулярно ходите за покупками и ездите на работу.</p>
+              <h1 class="rule1-list-subtitle wow slideInDown">Не чекиньтесь</h1>
+              <p class="rule1 wow fadeInLeft">Рассказывать всему интернету о том, где и как часто вы бываете — опасное излишество. Отключите автоматическую геолокацию под постами и фотографиями, удалите Swarm. Даже друзьям не обязательно знать, каким путем вы регулярно ходите за покупками и ездите на работу.</p>
             </li>
             <li>
-              <h1 class="rule1-list-subtitle">Ограничьте доступ к своим профилям</h1>
-              <p class="rule1">Установите доступ «Для друзей». А если вам нужна публичная страница для работы, не публикуйте на ней ничего личного.</p>
+              <h1 class="rule1-list-subtitle wow slideInDown">Ограничьте доступ к своим профилям</h1>
+              <p class="rule1 wow fadeInLeft">Установите доступ «Для друзей». А если вам нужна публичная страница для работы, не публикуйте на ней ничего личного.</p>
             </li>
           </ul>
-          <iframe class="-video" width="468" height="260" src="https://www.youtube.com/embed/qBDbO_bAdFM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe class="-video wow fadeInRight" width="468" height="260" src="https://www.youtube.com/embed/qBDbO_bAdFM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -137,20 +141,20 @@
   <section>
     <div id="password" class="reliable-password-block">
        <div class="pass-block-conrainer">
-         <h1 class="pass-block-title">Надежный <span class="orange-password">Пароль</span></h1>
+         <h1 class="pass-block-title wow fadeInLeft">Надежный <span class="orange-password">Пароль</span></h1>
          <div class="password-block-content">
           <ul class="relpass-points">
             <li>
-              <h2 class="pass-points-title">Минимум 12 символов</h2>
-              <p class="pass-block-text">Вам нужно выбрать длинный пароль. Не существует минимальной длины пароля, которая всех бы устраивала, однако обычно используют длину от 12 до 14 символов. Более длинный пароль будет ещё лучше.</p>
+              <h2 class="pass-points-title wow slideInDown">Минимум 12 символов</h2>
+              <p class="pass-block-text wow fadeInUp">Вам нужно выбрать длинный пароль. Не существует минимальной длины пароля, которая всех бы устраивала, однако обычно используют длину от 12 до 14 символов. Более длинный пароль будет ещё лучше.</p>
             </li>
             <li>
-              <h2 class="pass-points-title">Цифры, символы и буквы</h2>
-              <p class="pass-block-text">Используйте различные комбинации символов, чтобы сделать пароль более сложным.</p>
+              <h2 class="pass-points-title wow slideInDown">Цифры, символы и буквы</h2>
+              <p class="pass-block-text wow fadeInUp">Используйте различные комбинации символов, чтобы сделать пароль более сложным.</p>
             </li>
             <li>
-              <h2 class="pass-points-title">Не словарное слово</h2>
-              <p class="pass-block-text">Избегайте очевидных словарных слов или их комбинаций. Любое слово в пароле само по себе плохо. Любая комбинация слов тоже плоха.</p>
+              <h2 class="pass-points-title wow slideInDown">Не словарное слово</h2>
+              <p class="pass-block-text wow fadeInUp">Избегайте очевидных словарных слов или их комбинаций. Любое слово в пароле само по себе плохо. Любая комбинация слов тоже плоха.</p>
             </li>
             <li>
               <h2 class="pass-points-title"></h2>
@@ -158,78 +162,78 @@
             </li>
           </ul>
           <div class="password-video__wrapper">
-            <iframe width="468" height="260" src="https://www.youtube.com/embed/u1ffz7qDp78" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="wow fadeInRight" width="468" height="260" src="https://www.youtube.com/embed/u1ffz7qDp78" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
       <ul class="pass-cards">
-          <li><h2 class="password-manager-title"><span class="orange-pass">ЕKkjdf3en!@#e3els?</span> И как же такой <span class="orange-pass">пароль</span> запомнить?</h2>
+          <li class="wow fadeInLeft"><h2 class="password-manager-title"><span class="orange-pass">ЕKkjdf3en!@#e3els?</span> И как же такой <span class="orange-pass">пароль</span> запомнить?</h2>
           <div class="line"></div>
           <p class="password-manager">Никак. Не надо его запоминать. Есть такие сервисы — менеджеры паролей. Они сами генерируют надежные пароли и их хранят. Таких сервисов довольно много — одни работают в онлайне и в приложениях, другие устанавливаются в память компьютера. </p></li>
-          <li><h2 class="password-manager-title">Для такого <span class="orange-pass">менеджера</span> тоже нужен <span class="orange-pass">пароль?</span></h2>
+          <li class="wow fadeInRight"><h2 class="password-manager-title">Для такого <span class="orange-pass">менеджера</span> тоже нужен <span class="orange-pass">пароль?</span></h2>
           <div class="line"></div>
-          <p class="password-manager">Да. Это называется «мастер-пароль». И вот его придется запомнить.</p></li>
-          <li><h2 class="password-manager-title">Как <span class="orange-pass">придумать</span> надежный мастер-пароль и <span class="orange-pass">запомнить</span> его?</h2>
+          <p class="password-manager">Да. Это называется «мастер-пароль». И вот его придется запомнить.</p></li class="wow fadeInLeft">
+          <li class="wow fadeInLeft"><h2 class="password-manager-title">Как <span class="orange-pass">придумать</span> надежный мастер-пароль и <span class="orange-pass">запомнить</span> его?</h2>
           <div class="line"></div>
           <p class="password-manager">Можно вспомнить какую-то фразу из семейного фольклора и записать ее латиницей. Кстати, некоторые сервисы советуют в качестве хорошего пароля использовать русские слова, записанные на английской раскладке и наоборот.</p></li>
       </ul>
-      <a href="" id="open-button" class="open-button">Сгенерировать пароль</a>
+      <a href="" id="open-button" class="open-button wow zoomIn">Сгенерировать пароль</a>
     </div>
     
    </div>
   </section>
   <section class="mail-safety">
       <div id="mail" class="ms-content">
-          <h1 class="mail-safety-title"><span>Безопасность</span> электронной почты</h1>
-          <div class="line"></div>
+          <h1 class="mail-safety-title wow fadeInDown"><span>Безопасность</span> электронной почты</h1>
+          <div class="line wow fadeInDown"></div>
            <ul class="mail-safety-list">
-            <li>
+            <li class="wow fadeInLeft" class="wow fadeInLeft">
               <h2>Взлом ваших<br>сервисов</h2>
               <div class="line2"></div>
               <p class="m-s-text">Взломанный почтовый ящик — это доступ к сайтам от вашего имени. Если ваш почтовый ящик будет взломан, злоумышленник в считанные секунды изменит пароль ко всем вашим сервисам, где данный адрес использовался для регистрации.</p>
-            </li>
+            </li class="wow fadeInLeft">
             <div class="line-between"></div>
-            <li>
+            <li class="wow fadeInUp">
               <h2>Двухэтапная аутентификация</h2>
               <div class="line2"></div>
               <p>Любой почтовый ящик, расположенный в зоне RU (rambler.ru, mail.ru, yandex.ru) недостаточно надежен! Как вариант, воспользуйтесь электронной почтой от Google.com (Gmail) с настройкой двухэтапной аутентификации.</p>
             </li>
             <div class="line-between"></div>
-            <li>
+            <li class="wow fadeInRight">
               <h2>Несколько адресов<br>почты</h2>
               <div class="line2"></div>
               <p>Используйте несколько адресов для рабочей и личной переписки, для регистрации на сайтах и подписок на рассылки интересующих вас материалов. Это правильно с точки зрения цифровой безопасности и станет первичным фильтром писем, который позволит при работе сосредоточиться именно на нужной корреспонденции.</p>
             </li>
           </ul>
-      <h2 class="fishing-title">Фишинг</h2>
+      <h2 class="fishing-title wow zoomIn">Фишинг</h2>
       <div class="line2"></div>
       <ul class="fishing-attack-content">
-          <h3 class="fishing-attack-title">Что такое фишинг?</h3>
-          <p class="fishing-attack-text">Фишинг-атаки можно назвать преступлением XXI века. Средства массовой информации ежедневно публикуют списки организаций, чьи клиенты подверглись фишинговым атакам. Средства phishing-мошенничества с каждым днем продолжают расти не только количественно, но и качественно. В то время, как спам только отвлекает получателей от работы, фишинг зачастую ведет к реальным финансовым потерям. Угроза вполне серьезная, так почему же люди до сих пор не научились ее избегать?</p>
-          <h3 class="fishing-attack-title">Как уберечься от фишинга?</h3>
-          <p class="fishing-attack-text">В первую очередь следует сохранять спокойствие и не поддаваться на провокации — это одинаково полезно и в случае онлайн-мошенничества, и в случае «фишинга». Необходимо как следует проверять все ссылки и сайты, на которые они ведут.
+          <h3 class="fishing-attack-title wow fadeInLeft">Что такое фишинг?</h3>
+          <p class="fishing-attack-text wow fadeInRight">Фишинг-атаки можно назвать преступлением XXI века. Средства массовой информации ежедневно публикуют списки организаций, чьи клиенты подверглись фишинговым атакам. Средства phishing-мошенничества с каждым днем продолжают расти не только количественно, но и качественно. В то время, как спам только отвлекает получателей от работы, фишинг зачастую ведет к реальным финансовым потерям. Угроза вполне серьезная, так почему же люди до сих пор не научились ее избегать?</p>
+          <h3 class="fishing-attack-title wow fadeInLeft">Как уберечься от фишинга?</h3>
+          <p class="fishing-attack-text wow fadeInRight">В первую очередь следует сохранять спокойствие и не поддаваться на провокации — это одинаково полезно и в случае онлайн-мошенничества, и в случае «фишинга». Необходимо как следует проверять все ссылки и сайты, на которые они ведут.
           Если вы получили подозрительную ссылку от коллеги или друга, прежде чем по ней перейти, стоит убедиться, что на другом конце провода именно тот, кто должен там быть. В случае «фишинга» также полезно помнить о том, что данные, например, банковской карты ни один настоящий сотрудник банка просто не вправе у вас потребовать.</p>
       </ul>
       </div>
   </section>
   <section id="browser" class="browser-safety">
     <div class="BS-content-block">
-      <h1 class="BS-title">Защита <span class="orange-browser">браузера</span></h1>
-      <h3 class="browser-settings-title">Настройте браузер</h3>
-      <p class="browser-settings">Вы можете запретить доступ к нежелательным элементам, таким как камера или микрофон, запретить отслеживание геолокации. Это не панацея, но так вы по крайней мере убедитесь, что браузер не настроен против вас.</p>
-      <h3 class="browser-settings-title">Регулярно обновляйте браузер</h3>
-      <p class="browser-settings">Не успели разработчики залатать очередную дыру в безопасности браузера, как появляется новая, поэтому так важно, чтобы была установлена свежая версия.</p>
-      <p class="browser-settings">Во многих современных браузерах есть служба автоматического обновления. Если вы отключили её по какой-то причине, не забывайте регулярно проверять наличие обновлений вручную.</p>
-      <h3 class="browser-settings-title">Будьте внимательны при установке расширений</h3>
-      <p class="browser-settings">Большинство расширений безвредны, а многие вообще незаменимы в работе. Но не теряйте бдительности, особенно когда дело касается доступа к вашим данным. Например, получив доступ к вашим данным на всех веб-сайтах, расширение может блокировать рекламу или, наоборот, добавлять лишние баннеры.</p>
-      <div class="diagram-title">
+      <h1 class="BS-title wow fadeInUp">Защита <span class="orange-browser">браузера</span></h1>
+      <h3 class="browser-settings-title wow fadeInDown">Настройте браузер</h3>
+      <p class="browser-settings wow fadeInLeft">Вы можете запретить доступ к нежелательным элементам, таким как камера или микрофон, запретить отслеживание геолокации. Это не панацея, но так вы по крайней мере убедитесь, что браузер не настроен против вас.</p>
+      <h3 class="browser-settings-title wow fadeInDown">Регулярно обновляйте браузер</h3>
+      <p class="browser-settings wow fadeInLeft">Не успели разработчики залатать очередную дыру в безопасности браузера, как появляется новая, поэтому так важно, чтобы была установлена свежая версия.</p>
+      <p class="browser-settings wow fadeInLeft">Во многих современных браузерах есть служба автоматического обновления. Если вы отключили её по какой-то причине, не забывайте регулярно проверять наличие обновлений вручную.</p>
+      <h3 class="browser-settings-title wow fadeInDown">Будьте внимательны при установке расширений</h3>
+      <p class="browser-settings wow fadeInLeft">Большинство расширений безвредны, а многие вообще незаменимы в работе. Но не теряйте бдительности, особенно когда дело касается доступа к вашим данным. Например, получив доступ к вашим данным на всех веб-сайтах, расширение может блокировать рекламу или, наоборот, добавлять лишние баннеры.</p>
+      <div class="diagram-title wow zoomIn">
        C каких сайтов пользователи переходят<br>на страницы с угрозами
       </div>
-      <div class="line2"></div>
-      <div id="data-diagram" class="data-diagram" style="width: 1000px; height: 700px;"></div>
+      <div class="line2 wow fadeIn"></div>
+      <div id="data-diagram" class="data-diagram wow fadeIn" style="width: 1000px; height: 700px;"></div>
       <div class="type-of-attack">
         <div class="list-attack">
-          <h3 class="title-for-list">Вид атаки</h3> 
-          <ul class="choose-type">
+          <h3 class="title-for-list wow fadeInLeft">Вид атаки</h3> 
+          <ul class="choose-type wow fadeInLeft">
             <li class="attack">
               <a href="#" id="homograph-button" class="attack-link choosed-type-of-attack">
                 IDN homograph attack
@@ -244,26 +248,26 @@
         </div>     
         <div class="types-of-attack-container">
           <div id="idn-container" class="IDN-container">
-            <h2 class="IDN-title">
+            <h2 class="IDN-title wow fadeInDown">
             <span class="idn-orange">IDN</span> homograph <span class="attack-border">attack</span>
             </h2>
-            <h3 class="IDN-title-rus">
+            <h3 class="IDN-title-rus wow fadeInDown">
             <span class="bold-rustitle">Атака</span> интернационализированного <span class="bold-rustitle">доменного имени</span>
             </h3>
-            <p class="IDN">
+            <p class="IDN wow fadeInRight">
               Атаки с помощью омографов — букв, похожих на символы других алфавитов — часто проводят "фишеры", маскирующие названия поддельных сайтов под страницы известных компаний и брендов. Так, в сентябре эксперты обнаружили мошеннический домен, замаскированный под страницу корпорации Adobe, в которой вместо латинской буквы "А" была кириллическая. Сайт распространял бэкдор Beta Bot под видом новой версии Flash Player.
             </p>
-            <h3 class="howtoavoid-IDN-title">Как это избежать?</h3>
-            <div class="line2"></div>
-            <p class="howtoavoid-IDN">
+            <h3 class="howtoavoid-IDN-title wow fadeInDown">Как это избежать?</h3>
+            <div class="line2 wow fadeInUp"></div>
+            <p class="howtoavoid-IDN wow fadeInRight">
               Чтобы понять, безопасно ли открывать тот или иной сайт, проверьте информацию в адресной строке. Если с сайтом нельзя установить защищенное соединение, вы увидите предупреждение.
             </p>
             <ul class="secure-connection-pic">
-              <li class="conection-pic-container">
+              <li class="conection-pic-container wow fadeInLeft">
                 <img class="conection-pic" src="img/safety-conection.jpg" alt="">
                 <p class="conection-text">Соединение <span>защищено</span></p>
               </li>
-              <li class="conection-pic-container">
+              <li class="conection-pic-container wow fadeInRight">
                 <img class="conection-pic" src="img/not-safety-conection.jpg" alt="">
                 <p class="conection-text">Соединение <span>не защищено</span></p>
               </li>
