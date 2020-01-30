@@ -64,6 +64,20 @@ header{
   color:#999;
   font-weight: 100;
   text-transform: uppercase;
+  animation: text 3s 1;
+  position: relative;
+}
+@keyframes text{
+  0%{
+    color: black;
+  }
+  30%{
+    letter-spacing: 10px;
+  }
+  85%{
+    letter-spacing: 1px;
+
+  }
 }
 .banner-title span{
   font-weight: bold;
@@ -76,6 +90,7 @@ header{
 .banner-subtitle span{
   font-weight: bold;
   color: #b0b0b0;
+ 
 }
 .internet_pic{
   height: 300px;
