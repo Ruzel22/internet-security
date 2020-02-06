@@ -7,7 +7,10 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="animate.css" />
+  <link rel="shortcut icon" href="img/favicon.png" type="png">
+  <script src="https://kit.fontawesome.com/be47b5fbba.js" crossorigin="anonymous"></script>
   <script src="wow.min.js"></script>
+  <link rel="stylesheet" href="">
   <script>
     new WOW().init();
   </script>
@@ -54,12 +57,13 @@
     <div class="navigation-wrapper">
       <nav class="main-navigation">
           <p>Internet<span>security</span></p>
+          <a id="BM-button" href="" class="BM-button"></a> 
       </nav>
     </div>
       <div class="banner">
       <p class="banner-title ">Безопасный <span>интернет</span></p>
-      <p class="banner-subtitle wow slideInDown">Безопасный <span>интернет</span> для <span>безопасной жизни</span></p>
-      <a class="button1 " href="#protect_yourself">Обезопасить себя</a>
+      <p class="banner-subtitle wow fadeInDown">Безопасный <span>интернет</span> для <span>безопасной жизни</span></p>
+      <a class="button1 wow fadeInUp" href="#protect_yourself">Обезопасить себя</a>
     </div>
   </header>
   <section class="block1">
@@ -168,7 +172,7 @@
       <ul class="pass-cards">
           <li class="wow fadeInLeft"><h2 class="password-manager-title"><span class="orange-pass">ЕKkjdf3en!@#e3els?</span> И как же такой <span class="orange-pass">пароль</span> запомнить?</h2>
           <div class="line"></div>
-          <p class="password-manager">Никак. Не надо его запоминать. Есть такие сервисы — менеджеры паролей. Они сами генерируют надежные пароли и их хранят. Таких сервисов довольно много — одни работают в онлайне и в приложениях, другие устанавливаются в память компьютера. </p></li>
+          <p class="password-manager">Никак. Не надо его запоминать. Есть такие сервисы — <a class="orange" href="https://www.lastpass.com/ru/password-generator">менеджеры паролей</a>. Они сами генерируют надежные пароли и их хранят. Таких сервисов довольно много — одни работают в онлайне и в приложениях, другие устанавливаются в память компьютера. </p></li>
           <li class="wow fadeInRight"><h2 class="password-manager-title">Для такого <span class="orange-pass">менеджера</span> тоже нужен <span class="orange-pass">пароль?</span></h2>
           <div class="line"></div>
           <p class="password-manager">Да. Это называется «мастер-пароль». И вот его придется запомнить.</p></li class="wow fadeInLeft">
@@ -301,10 +305,29 @@
         <input class="input-password">
       </div>
     </div>
-  </section>
-  <footer>
+</section>
+<section id="burger-menu" class="burger-menu fade">
+  <div class="modal-overlay" id="modal-overlay"></div>  
+  <div class="burger-menu-container modal ">
+      <div class="burger-menu-content">
+        <a id="BMclose" href="" class="BMclose"><img class="exit-logo" src="img/exit-logo.png" alt=""></a>
+        <p class="name">Xабибуллин<br><span>Рузель</span</p>
+        <div class="socialwebs">
+          <a  class="vk" href="https://vk.com/ruzel22"><i class="fab fa-vk"></i></a>
+          <a class="instagram" href="https://www.instagram.com/ruzel22/"><i class="fab fa-instagram"></i></a>
+          <a class="gmail" href="mailto:ruzeldenf222@gmail.com"><i class="far fa-envelope"></i></a>
+        </div>       
+      </div>
+  </div>
+</section>
+<footer>
     <nav class="main-navigation">
       <p>Internet<span>security</span></p>
+      <div class="socialwebs-footer">
+        <a  class="vk" href="https://vk.com/ruzel22"><i class="fab fa-vk"></i></a>
+        <a class="instagram" href="https://www.instagram.com/ruzel22/"><i class="fab fa-instagram"></i></a>
+        <a class="gmail" href="mailto:ruzeldenf222@gmail.com"><i class="far fa-envelope"></i></a>
+      </div>
   </nav>
 </footer>
 </body>
@@ -362,5 +385,20 @@
     input.value = generate();
     
   });
+  var burgermenu = document.querySelector(".burger-menu");
+  var BMclose = document.querySelector("#BMclose");
+  var BMbutton = document.querySelector("#BM-button");
+
+  BMclose.addEventListener("click", function(ev) {
+    ev.preventDefault();
+    burgermenu.style.display = "none";
+  });
+
+  BMbutton.addEventListener("click", function(ev) {
+    ev.preventDefault();
+    burgermenu.style.display="block";
+    
+  });
+  
 </script>
 </html>
