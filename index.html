@@ -15,6 +15,10 @@
     new WOW().init();
   </script>
   <script src="https://www.google.com/jsapi"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="parallax.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <script>
     google.load("visualization", "1", { packages: ["corechart"] });
     google.setOnLoadCallback(drawChart);
@@ -60,10 +64,12 @@
           <a id="BM-button" href="" class="BM-button"></a> 
       </nav>
     </div>
+    <div class="parallax wow fadeIn">
       <div class="banner">
-      <p class="banner-title ">Безопасный <span>интернет</span></p>
-      <p class="banner-subtitle wow fadeInDown">Безопасный <span>интернет</span> для <span>безопасной жизни</span></p>
+        <p class="banner-title ">Безопасный <span>интернет</span></p>
+        <p class="banner-subtitle wow fadeInDown">Безопасный <span>интернет</span> для <span>безопасной жизни</span></p>
       <a class="button1 wow fadeInUp" href="#protect_yourself">Обезопасить себя</a>
+      </div>
     </div>
   </header>
   <section class="block1">
@@ -331,7 +337,9 @@
   </nav>
 </footer>
 </body>
+
 <script>
+
   function generate( length = 12 ){
     var uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     var lowercase = 'abcdefghijklmnopqrstuvwxyz';
@@ -399,6 +407,5 @@
     burgermenu.style.display="block";
     
   });
-  
 </script>
 </html>

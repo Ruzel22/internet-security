@@ -11,8 +11,17 @@ body{
   min-width: 1090px;
 }
 header{
-  height: 790px;
+  height: 100vh;
   background: url(img/header.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax{
+  background: url(img/banner.png);
+  height: 100vh;
+  
 }
 .navigation-wrapper{
   background: rgba(0, 0, 0, .5);
@@ -120,6 +129,10 @@ header{
 }
 .block1{
   background: url(img/block2.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .block1-title span{
   font-weight: bold;
@@ -157,6 +170,10 @@ header{
 
 .main-rules-block{
   background: url(img/block3.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .rules-list{
@@ -270,7 +287,12 @@ footer{
 }
 
 .information-control-block{
-  background: url(img/block2.jpg)
+  background: url(img/block2.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
 }
 
 .rule1-block{
@@ -462,6 +484,10 @@ footer{
 .mail-safety{
   background: url(img/mail-safety-block.jpg);
   padding-bottom: 190px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .open-button{
   padding: 25px;
