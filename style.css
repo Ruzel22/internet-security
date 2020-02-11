@@ -12,16 +12,18 @@ body{
 }
 header{
   height: 100vh;
-  background: url(img/header.jpg);
+  background-image: url(img/header.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .parallax{
-  background: url(img/banner.png);
+  background-image: url(img/banner.png);
   height: 100vh;
-  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .navigation-wrapper{
   background: rgba(0, 0, 0, .5);
@@ -398,8 +400,12 @@ footer{
   margin-top: 100px;
 }
 .reliable-password-block{
-  background: url(img/block4-black.jpg);
+  background: url(img/block3.jpg);
   margin: 0 auto;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
     
 }
 .pass-block-title{
@@ -482,7 +488,7 @@ footer{
   padding-bottom: 10px;
 }
 .mail-safety{
-  background: url(img/mail-safety-block.jpg);
+  background: url(img/block2.jpg);
   padding-bottom: 190px;
   background-attachment: fixed;
   background-position: center;
@@ -576,20 +582,24 @@ footer{
   flex-direction: column;
 }
 .fishing-attack-text{
-    padding: 20px;
+  padding: 20px;
 }
 .browser-safety{
-    background: url(img/block4-black.jpg);
+  background: url(img/block3.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .BS-title{
-    text-transform: uppercase;
-    font-size: 32px;
-    color: #999;
-    font-weight: 100;
+  text-transform: uppercase;
+  font-size: 32px;
+  color: #999;
+  font-weight: 100;
 }
 .orange-browser{
-    color: #fcac45;
-    font-weight: bold;
+  color: #fcac45;
+  font-weight: bold;
 }
 .BS-content-block{
   width: 1090px;
